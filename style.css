@@ -8,10 +8,14 @@
   width: 100px;
   height: 470px;
   float: left;
+  position: fixed;
+  margin-top: 30px;
+  padding-left: 5px;
+  padding-top: 30px;
 }
 .sid {
-  margin: auto;
   height: 100%;
+  margin-left: -20px;
 }
 .sid ul,
 li {
@@ -44,13 +48,15 @@ a {
   background-color: blue;
   width: 100%;
   color: white;
+
+  position: fixed;
 }
 .main {
-  z-index: -1;
-  justify-content: center;
-  align-items: center;
   height: 480px;
-  margin-left: 110px;
+  margin-left: 60px;
+  margin-top: 50px;
+  padding-left: 60px;
+  top: 20px;
 }
 
 footer {
@@ -58,19 +64,22 @@ footer {
   text-align: center;
   color: #fff;
 }
-.kotak {
-  display: inline;
-  padding: 10px;
-}
 
 .box1,
 .box2 {
   background-color: red;
-  width: 100px;
+  width: 150px;
   border-radius: 5px;
-  height: 100px;
-
+  height: 150px;
+  margin: 5px;
   display: inline-block;
+}
+.kotak {
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid red;
+  margin-top: 20px;
 }
 
 /* clear */
