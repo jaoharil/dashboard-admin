@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dahsboard Admin</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="asset/css/local.css" />
   </head>
   <body class="cf">
     <!-- navbar -->
@@ -21,12 +22,11 @@
           <a href="index.html" id="dashboard">Dasboard</a>
         </li>
         <li>
-          <a href="lampu.html" id="user">lampu</a>
+          <a href="lampu.html" id="pages">lampu</a>
         </li>
         <li>
-          <a href="localstorage.html" id="user">LocalStorage</a>
+          <a href="localstorage.html" id="user">Local Storage</a>
         </li>
-
         <li>
           <a href="#" id="profil">Profil</a>
         </li>
@@ -41,15 +41,22 @@
     <!-- content -->
     <div class="main">
       <div class="dashboard">
-        <h1>lampu</h1>
+        <h1>LocalStorage</h1>
       </div>
       <div class="kotak">
-        <div class="box1">
-          <img src="asset/gambar/off.gif" alt="of" id="of" />
+        <div id="root">
+          <div class="log" id="log">
+            <label for="nama" id="nama">Login</label>
+            <input type="text" placeholder="isi nama" id="usernameInput" />
+            <input type="password" placeholder="isi password" id="passwordInput" />
+            <button onclick="onLogin()" id="button">Login</button>
+          </div>
+          <button onclick="onLogout()" id="logout">Logout</button>
+          <br />
+          <br />
+          <h1 id="admin"></h1>
+          <h1 id="basic"></h1>
         </div>
-
-        <button onclick="lampu('on')" class="b">on</button>
-        <button onclick="lampu('of')" class="b">of</button>
       </div>
     </div>
     <!-- end content -->
@@ -59,6 +66,6 @@
       <h2>copyright 2024@jaoharil</h2>
     </footer>
     <!-- end footer -->
-    <script src="asset/js/lampu.js"></script>
+    <script src="asset/js/local.js"></script>
   </body>
 </html>
