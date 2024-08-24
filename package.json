@@ -1,0 +1,17 @@
+{
+  "name": "materi",
+  "version": "1.0.0",
+  "description": "belajar node js",
+  "main": "index.js",
+  "scripts": {
+    "joril": "nodemon index.js"
+  },
+  "keywords": [
+    "abc"
+  ],
+  "author": "jaoharil",
+  "license": "ISC",
+  "dependencies": {
+    "nodemon": "^3.1.4"
+  }
+}
